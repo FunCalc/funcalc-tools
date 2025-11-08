@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character and Word Counter Online | funcalc.fun Tools</title>
+    <style>/* Styling */</style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Character and Word Counter</h1>
+        <p>Instantly count characters, words, sentences, and paragraphs.</p>
+        <textarea id="textInput" oninput="countText()" placeholder="Paste your text here..."></textarea>
+        <div id="result">Words: 0 | Characters: 0 (Excluding Spaces)</div>
+        <script>
+            function countText() {
+                const text = document.getElementById('textInput').value;
+                const words = text.trim().split(/\s+/).filter(word => word.length > 0).length;
+                const chars = text.length;
+                const charsNoSpaces = text.replace(/\s/g, '').length;
+                document.getElementById('result').innerHTML = `Words: <strong>${words}</strong> | Characters: <strong>${chars}</strong> (No Spaces: ${charsNoSpaces})`;
+            }
+        </script>
+        </div>
+</body>
+</html>
