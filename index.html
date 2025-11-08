@@ -2,24 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Utility Tools Hub | funcalc.fun Tools</title>
+    <title>Utility Tools Hub: Web, Creator & Dev Tools | funcalc.fun Tools</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 40px; text-align: center; }
-        h1 { color: #f7931e; }
-        .tool-link { margin-top: 25px; font-size: 1.1em; }
-        .tool-link a { color: #1a73e8; text-decoration: none; font-weight: bold; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; color: #202124; line-height: 1.6; text-align: center;}
+        .container { max-width: 800px; margin: 50px auto; padding: 20px; background-color: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);}
+        h1 { color: #0f9d58; }
+        .category-grid { display: flex; justify-content: space-around; gap: 20px; margin-top: 30px;}
+        .category-card { padding: 25px; border-radius: 8px; border: 2px solid #0f9d58; flex-basis: 30%; background-color: #e6fff0; text-decoration: none; color: #0f9d58; font-weight: bold;}
     </style>
 </head>
 <body>
-    <h1>🛠️ Welcome to Utility Tools</h1>
-    <p>All essential creator and developer tools are listed here.</p>
-    
-    <div class="tool-link">
-        <a href="https://tools.funcalc.fun/reading-time/index.html">Start using Reading Time Estimator</a>
-    </div>
-
-    <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee;">
-        <a href="https://funcalc.fun">← Back to Main Site</a>
+    <div class="container">
+        <h1>🛠️ Utility Tools Hub: Select a Category</h1>
+        <p>Essential, fast, and secure tools for developers, creators, and webmasters.</p>
+        
+        <div class="category-grid">
+            <a href="/creator/reading-time/index.html" class="category-card">
+                <h3>✍️ Creator Tools</h3>
+                <p>Reading Time, Word Count, Case Converter</p>
+            </a>
+            <a href="/dev/json-to-yaml-converter/index.html" class="category-card">
+                <h3>💻 Dev Tools</h3>
+                <p>JSON/YAML, Hash Generator, Passwords</p>
+            </a>
+            <a href="/web/url-encoder-decoder/index.html" class="category-card">
+                <h3>🌐 Web Tools</h3>
+                <p>URL Encoding, HTML Editor, CSS Grid</p>
+            </a>
+        </div>
+        
+        <p style="margin-top: 40px;"><a href="https://funcalc.fun">← Back to Main FunCalc</a></p>
     </div>
 </body>
 </html>
