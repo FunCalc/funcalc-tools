@@ -1,12 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Utility Tools Hub: Web, Creator & Dev Tools | funcalc.fun Tools</title>
+    <style>
+        /* CSS copied from Pro Hub structure for Professional Look */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; color: #202124; line-height: 1.6; text-align: center; margin: 0; }
+        .container { max-width: 900px; margin: 50px auto; padding: 20px; background-color: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);}
+        h1 { color: #0f9d58; font-size: 2.2em; margin-bottom: 30px;}
+        .category-grid { display: flex; justify-content: space-around; gap: 20px; margin-top: 30px;}
+        .category-card { 
+            padding: 25px; border-radius: 8px; border: 2px solid #0f9d58; 
+            flex-basis: 30%; background-color: #e6fff0; 
+            text-decoration: none; color: #0f9d58; font-weight: bold; 
+            transition: transform 0.2s;
+        }
+        .category-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(15, 157, 88, 0.3); }
+        .category-card h3 { margin-top: 0; }
+        .category-card a { display: block; margin-top: 5px; color: #1a73e8; font-weight: normal; } /* Tool Links Styling */
+    </style>
+</head>
 <body>
     <div class="container">
         <h1>🛠️ Utility Tools Hub: Select a Category</h1>
+        <p>Essential, fast, and secure tools for developers, creators, and webmasters.</p>
         
         <div class="category-grid">
-            <a href="creator/reading-time/index.html" class="category-card"><h3>✍️ Creator Tools</h3><p>Reading Time, Word Count, Case Converter</p></a>
-            <a href="dev/json-to-yaml-converter/index.html" class="category-card"><h3>💻 Dev Tools</h3><p>JSON/YAML, Hash Generator, Passwords</p></a>
-            <a href="web/url-encoder-decoder/index.html" class="category-card"><h3>🌐 Web Tools</h3><p>URL Encoding, HTML Editor, CSS Grid</p></a>
+            <div class="category-card" style="border-color: #db4437;">
+                <h3>✍️ Creator Tools</h3>
+                <a href="creator/reading-time/index.html">Reading Time Estimator</a>
+                <a href="creator/character-word-counter/index.html">Word Counter</a>
+                <a href="creator/case-converter/index.html">Case Converter</a>
+            </div>
+            <div class="category-card" style="border-color: #1a73e8;">
+                <h3>💻 Dev Tools</h3>
+                <a href="dev/json-to-yaml-converter/index.html">JSON/YAML Converter</a>
+                <a href="dev/password-generator/index.html">Password Generator</a>
+                <a href="dev/base64-converter/index.html">Base64 Encoder</a>
+            </div>
+            <div class="category-card" style="border-color: #f7931e;">
+                <h3>🌐 Web Tools</h3>
+                <a href="web/url-encoder-decoder/index.html">URL Encoder/Decoder</a>
+                <a href="web/css-grid-generator/index.html">CSS Grid Generator</a>
+                <a href="web/html-editor/index.html">Simple HTML Editor</a>
+            </div>
         </div>
+        
+        <div style="margin-top: 40px; border: 2px dashed #ff9800; padding: 15px; margin-bottom: 0;">[ADSENSE SLOT: Targeted Utility Ad Space]</div>
+        
+        <p style="margin-top: 20px;"><a href="https://funcalc.fun">← Back to Main FunCalc</a></p>
     </div>
-    </body>
+</body>
 </html>
