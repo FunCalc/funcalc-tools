@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple HTML Editor and Viewer Online | funcalc.fun Tools</title>
+    <meta name="description" content="Write and instantly preview HTML code in a split-screen editor. Lightweight utility for quick testing and development."/>
+    
+    <style>/* Styling */</style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖥️ Simple HTML Editor</h1>
+        <p>Write HTML code and see the live result instantly.</p>
+        
+        <textarea id="htmlInput" oninput="updatePreview()" placeholder="Write your HTML code here..."></textarea>
+        <iframe id="preview" style="width: 100%; height: 200px; border: 1px solid #ccc;"></iframe>
+        
+        <div class="seo-content">
+            <p>This attracts students and developers for coding practice and quick testing—high repeat traffic potential.</p>
+        </div>
+    </div>
+    <script>
+        function updatePreview() {
+            const htmlCode = document.getElementById('htmlInput').value;
+            const iframe = document.getElementById('preview');
+            // Safely update iframe content
+            iframe.srcdoc = htmlCode; 
+        }
+    </script>
+</body>
+</html>
