@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Title Length & SEO Checker | funcalc.fun Tools</title>
+    <meta name="description" content="Check optimal length for YouTube video titles (Max 100 characters). Ensure your titles are optimized for click-through rate (CTR) and YouTube SEO."/>
+    
+    <style>
+        :root { --primary-color: #ff0000; }
+        body { font-family: Arial, sans-serif; background-color: #f4f6f9; line-height: 1.6; margin: 0; padding-top: 20px;}
+        .container { max-width: 600px; margin: 0 auto; padding: 30px; background-color: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);}
+        h1 { color: var(--primary-color); text-align: center; margin-bottom: 25px;}
+        textarea { width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 6px; min-height: 100px;}
+        #result { margin-top: 20px; padding: 15px; border-radius: 6px; font-size: 1.1em; text-align: center; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔴 YouTube Title Checker</h1>
+        <p style="text-align: center;">Check optimal length for YouTube video titles (Max 100 characters).</p>
+
+        <textarea id="titleInput" oninput="checkLength()" placeholder="Paste your YouTube Title here..."></textarea>
+        
+        <div id="result">
+            <p>Characters: 0 | Status: Needs title</p>
+        </div>
+        
+        <div class="seo-content">
+            <h2>Why Title Length Matters for YouTube SEO:</h2>
+            <p>Titles should be between 50 and 70 characters for best SEO results and to avoid being truncated on search results pages. This tool helps video creators optimize their content.</p>
+        </div>
+    </div>
+
+    <script>
+        function checkLength() {
+            const title = document.getElementById('titleInput').value;
+            const length = title.length;
+            const resultDiv = document.getElementById('result');
+            let status = 'Needs title';
+            let color = '#ccc';
+
+            if (length > 100) {
+                status = 'Too Long! (Max 100)';
+                color = '#ff0000';
+            } else if (length >= 50 && length <= 70) {
+                status = 'Perfect Length for SEO!';
+                color = '#34a853';
+            } else if (length > 0) {
+                 status = 'Good, but optimize for 50-70 range.';
+                color = '#ff9800';
+            }
+
+            resultDiv.style.backgroundColor = color === '#ccc' ? '#f0f0f0' : color;
+            resultDiv.style.color = color === '#ff0000' ? 'white' : '#333';
+            resultDiv.innerHTML = `
+                <p>Characters: <strong>${length}</strong> / 100</p>
+                <p>Status: ${status}</p>
+            `;
+        }
+    </script>
+    <div style="text-align: center; padding: 30px 0; border-top: 1px solid #eee; margin-top: 60px;">
+        <a href="https://tools.funcalc.fun/privacy.html">Privacy Policy</a>
+    </div>
+</body>
+</html>
